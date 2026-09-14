@@ -1,0 +1,6 @@
+# Keep local wrangler.toml on merges by using the "ours" merge driver.
+# Requires each machine performing merges to configure the local merge driver:
+#   git config merge.ours.driver true
+# After setting that, merges will keep the local (ours) version of wrangler.toml.
+
+wrangler.toml merge=ours
